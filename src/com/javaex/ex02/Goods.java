@@ -5,6 +5,7 @@ public class Goods {
 	private String name;
 	private int price;
 	private String camera;
+
 	
 
 	public Goods(String name,int price) {
@@ -12,14 +13,18 @@ public class Goods {
 		this.price = price;
 	}
 	
-	
+	public Goods() {
+		
+	}
+
 	public String getCamera() {
 		return camera;
 	}
 	public void setCamera(String camera) {
-		this.camera= camera;
+		this.camera = camera;
 	}
 	
+
 	public String getName() {
 		return name;
 	}
@@ -35,10 +40,10 @@ public class Goods {
 	}
 	
 	public void showInfo() {
-		System.out.println("상품명:" + name + ",가격:"+price);
-		//		System.out.printf("%s, %,d원%n",
-//				 camera.camera,
-//				 camera.price2);
+		System.out.println("상품명: " + name + "가격: " + price);
+	}
+	public void showInfo(String camera) {
+		System.out.println("상품명: " + camera + "가격: " + price);
 	}
 }
 
